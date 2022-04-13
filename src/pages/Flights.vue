@@ -274,8 +274,8 @@ td {
 
 .workers {
   margin: 0 5%;
-  padding: 0px 5px;
-  min-width: 11%;
+  padding: 0px 10px;
+  min-width: 10%;
   border: 1px solid #3d008d;
 }
 
