@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>
-      Home Assigment
+      Home Assignment
     </h1>
   </header>
 </template>
