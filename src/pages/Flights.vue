@@ -70,7 +70,6 @@
 export default {
   data() {
     return {
-      search: '',
       workers: [],
       activeWorker: null,
       flights: [],
@@ -157,12 +156,13 @@ export default {
   computed: {
     formatedTime() {
       let fTime = '';
+
       if (typeof this.flight_info.duration != 'string') {
         let h = Math.floor(this.flight_info.duration / 60);
         let m = this.flight_info.duration % 60;
         h = h < 10 ? h : h;
         m = m < 10 ? m : m;
-        
+
         if (m > 0) {
           fTime = `${h}h ${m}m`;
         } else {
