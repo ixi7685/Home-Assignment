@@ -113,7 +113,7 @@ export default {
         clearInterval(this.timer);
       }
 
-      this.timer = setInterval(this.loadFlightsInterval, 3000);
+      this.timer = setInterval(this.loadFlightsInterval, 60000);
 
       this.id = id;
 
@@ -185,7 +185,6 @@ export default {
 
     flights(val) {
       let flight = val.filter(flight => flight.num === this.flight_info.num);
-      console.log(flight[0]);
       this.flight_info = flight[0];
     }
   },
